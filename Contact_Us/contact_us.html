@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="contact_us.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <img id="logo" src="/Water My Plants.png" alt="Logo" />
+    <div id="toggleIcon" onclick="menuToggle()"></div>
+    <div id="menu-overlay">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Meet The Team</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Sign up</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="header-image">
+      <image class="header" src="/Contact Us.png"> </image>
+    </div>
+    <div class="form">
+      <div class="name">
+        <input type="text" name="name" autocomplete="off" required />
+        <label for="name" class="label-name">
+          <span class="content">Name</span>
+        </label>
+      </div>
+      <div class="email">
+        <input type="text" name="email" autocomplete="false" required />
+        <label for="email" class="label-name">
+          <span class="content">eMail</span>
+        </label>
+      </div>
+      <div class="title">
+        <input type="text" name="title" autocomplete="off" required />
+        <label for="title" class="label-name">
+          <span class="content">Title</span>
+        </label>
+      </div>
+    </div>
+    <div class="message">
+      <h2>Message</h2>
+      <textarea
+        type="text"
+        name="message-box"
+        autocomplete="off"
+        required
+      ></textarea>
+    </div>
+    <div class="button">
+      <button id="submit">Submit</button>
+    </div>
+  </body>
+  <footer>
+    <p>Copyright © Water my plants 2020</p>
+    <ul>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </footer>
+  <script type="text/Javascript" src="/contact_us.js"></script>
+</html>
