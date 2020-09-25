@@ -26,29 +26,27 @@ function validate() {
     error_message.innerHTML = text;
     error_message.style.padding = "10px";
     return false;
-  }
-  if (email.value === "" || name.value === null) {
+  } else if (email.value === "" || !email.value.includes("@")) {
     text = "Please enter a valid email";
+
     error_message.innerHTML = text;
     error_message.style.padding = "10px";
     return false;
-  }
-  if (emailTitle.value == "" || name.value === null) {
+  } else if (emailTitle.value == "" || emailTitle.value === null) {
     text = "Title is required";
-    console.log("1");
     error_message.innerHTML = text;
     error_message.style.padding = "10px";
     return false;
-  }
-  if (message.value == "" || name.value === null) {
+  } else if (message.value == "" || message.value === null) {
     text = "What did you want to tell us?";
-    console.log("2");
     error_message.innerHTML = text;
     error_message.style.padding = "10px";
     return false;
   }
   text = "Form Submitted Successfully!";
-  console.log("3");
+  console.log(email.value);
+  error_message.innerHTML = "";
+  error_message.style.padding = "0px";
   success_message.innerHTML = text;
   success_message.style.padding = "10px";
   return true;
