@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Contact Us Page</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="contact_us.css" />
@@ -14,60 +14,91 @@
     />
   </head>
   <header>
-    <img id="logo" src="/Water My Plants.png" alt="Logo" />
+    <img id="logo" src="Water My Plants.png" alt="Logo" />
     <div id="toggleIcon" onclick="menuToggle()"></div>
     <div id="menu-overlay">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Meet The Team</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Sign up</a></li>
-        <li><a href="#">Login</a></li>
+        <li>
+          <a href="https://test1-drab.vercel.app/landing_page.html">Home</a>
+        </li>
+        <li>
+          <a href="https://test3-woad.vercel.app/about_us.html"
+            >Meet The Team</a
+          >
+        </li>
+        <li>
+          <a href="https://test2-gules.vercel.app/contact_us.html">Contact</a>
+        </li>
+        <li>
+          <a href="https://water-my-plants-front-end.vercel.app/login"
+            >Sign up</a
+          >
+        </li>
+        <li>
+          <a href="https://water-my-plants-front-end.vercel.app/login">Login</a>
+        </li>
       </ul>
     </div>
   </header>
   <body>
     <div class="header-image">
-      <image class="header" src="/Contact Us.png"> </image>
+      <image class="header" src="Contact Us.png"> </image>
     </div>
-    <div class="form">
+    <div id="form" class="form">
       <div class="name">
-        <input type="text" name="name" autocomplete="off" required />
+        <input type="text" id="name" name="name" autocomplete="off" required />
         <label for="name" class="label-name">
           <span class="content">Name</span>
         </label>
       </div>
       <div class="email">
-        <input type="text" name="email" autocomplete="false" required />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          autocomplete="false"
+          required
+        />
         <label for="email" class="label-name">
           <span class="content">eMail</span>
         </label>
       </div>
       <div class="title">
-        <input type="text" name="title" autocomplete="off" required />
+        <input
+          type="text"
+          id="title"
+          name="title"
+          autocomplete="off"
+          required
+        />
         <label for="title" class="label-name">
           <span class="content">Title</span>
         </label>
       </div>
     </div>
+    <div id="error_message"></div>
+    <div id="success_message"></div>
     <div class="message">
       <h2>Message</h2>
       <textarea
         type="text"
+        id="message"
         name="message-box"
         autocomplete="off"
         required
       ></textarea>
     </div>
     <div class="button">
-      <button id="submit">Submit</button>
+      <input type="submit" id="submit" onclick="validate()" />
     </div>
   </body>
+  <script type="text/Javascript" src="contact_us.js"></script>
   <footer>
     <p>Copyright © Water my plants 2020</p>
     <ul>
-      <li><a href="#">About Us</a></li>
+      <li>
+        <a href="https://test3-woad.vercel.app/about_us.html">About Us</a>
+      </li>
     </ul>
   </footer>
-  <script type="text/Javascript" src="/contact_us.js"></script>
 </html>
