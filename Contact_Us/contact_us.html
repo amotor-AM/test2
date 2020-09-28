@@ -14,7 +14,12 @@
     />
   </head>
   <header>
-    <img id="logo" src="Water My Plants.png" alt="Logo" />
+    <!-- Clickable Logo. Navigates Home -->
+    <a href="https://test1-drab.vercel.app/landing_page.html">
+      <img id="logo" src="Water My Plants.png" alt="Logo" />
+    </a>
+
+    <!-- Hamburger Menu -->
     <div id="toggleIcon" onclick="menuToggle()"></div>
     <div id="menu-overlay">
       <ul>
@@ -41,16 +46,21 @@
     </div>
   </header>
   <body>
+    <!-- Header Image -->
     <div class="header-image">
-      <image class="header" src="Contact Us.png"> </image>
+      <image class="header" src="Contact Us.png" alt="Contact Us"> </image>
     </div>
+    <!-- Contact Us Form -->
     <div id="form" class="form">
+      <!-- Name Field -->
       <div class="name">
         <input type="text" id="name" name="name" autocomplete="off" required />
         <label for="name" class="label-name">
           <span class="content">Name</span>
         </label>
       </div>
+
+      <!-- eMail Field -->
       <div class="email">
         <input
           type="text"
@@ -63,6 +73,8 @@
           <span class="content">eMail</span>
         </label>
       </div>
+
+      <!-- eMail Title Field -->
       <div class="title">
         <input
           type="text"
@@ -76,8 +88,13 @@
         </label>
       </div>
     </div>
+
+    <!-- error message div -->
     <div id="error_message"></div>
+    <!-- success message div -->
     <div id="success_message"></div>
+
+    <!-- Message Field -->
     <div class="message">
       <h2>Message</h2>
       <textarea
@@ -88,11 +105,17 @@
         required
       ></textarea>
     </div>
+
+    <!-- Submit Button -->
     <div class="button">
       <input type="submit" id="submit" onclick="validate()" />
     </div>
   </body>
+
+  <!-- Linking Javascript -->
   <script type="text/Javascript" src="contact_us.js"></script>
+
+  <!-- Footer -->
   <footer>
     <p>Copyright © Water my plants 2020</p>
     <ul>

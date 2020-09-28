@@ -11,6 +11,7 @@ function menuToggle() {
 //Validating the Contact form
 
 function validate() {
+  //grabs all HTML inputs and sets their values to const.
   const form = document.getElementById("form");
   const name = document.getElementById("name");
   const email = document.getElementById("email");
@@ -19,8 +20,10 @@ function validate() {
   const error_message = document.getElementById("error_message");
   const success_message = document.getElementById("success_message");
 
+  // Creates a var called text that will be given a value below
   var text;
 
+  //this conditional basically checks to see if the form was submitted correctly. If it is missing elements based on what is defined in the if statement for each element than the form will not submit and the error message HTML element will output the message for that element.
   if (name.value === "" || name.value === null) {
     text = "Name is required";
     error_message.innerHTML = text;
@@ -43,8 +46,9 @@ function validate() {
     error_message.style.padding = "10px";
     return false;
   }
+
+  // If no conditionals are met then the form must be filled out correctly. In this case we will output the success message
   text = "Form Submitted Successfully!";
-  console.log(email.value);
   error_message.innerHTML = "";
   error_message.style.padding = "0px";
   success_message.innerHTML = text;
